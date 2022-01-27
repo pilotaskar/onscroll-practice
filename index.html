@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onscroll-parctice</title>
+</head>
+<body>
+
+    <style>
+        /* I learned from here also how to make scroll text with div and overflow scroll style thanks */
+        #demo {
+            height: 100px;
+            width: 200px;
+            overflow: scroll;
+        }
+    </style>
+    
+    <p>Please try to scroll text</p>
+    <div style="font-size: 10px; text-align: center;" id="demo" onscroll="myFunction()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid eum quo quasi. Voluptatum dicta similique aliquid quod omnis dolorum laborum eveniet aperiam suscipit amet ullam blanditiis, atque ipsum eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore corrupti sunt consectetur ipsam eveniet architecto quae, voluptatem, suscipit quo inventore laboriosam iure ab saepe enim vel quia modi nulla repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, tempore provident natus magnam et illo! Optio nobis, facere, ea doloremque sequi nulla ipsam nesciunt animi aliquid qui inventore, quaerat aspernatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corporis magnam aut eaque quia quis. Neque voluptatibus nisi dolore debitis modi at, vel facere! Veritatis voluptatibus officiis illum alias molestiae?
+    </div>
+    <p id="demo2"></p>
+
+    <script>
+
+        function myFunction(){
+         document.getElementById('demo').style.backgroundColor = 'black';
+         document.getElementById('demo').style.color = 'white';
+         document.getElementById('demo2').innerHTML = 'This is ONSCROLL attribute ';
+         document.getElementById('demo2').style.backgroundColor = 'aqua';
+
+         
+        }
+    </script>
+
+
+    
+</body>
+</html>
